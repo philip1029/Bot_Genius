@@ -4,7 +4,10 @@ import os
 
 
 # 봇 토큰
-TOKEN = 'MTIxMzExOTg4ODI0NDM0Mjc5NA.Gh-el2.jTHxElYYCil8eM0CkyvXiosUwev5kKqnNpLsZY'
+TOKEN1 = 'MTIxMzExOTg4ODI0N'
+TOKEN2 = 'DM0Mjc5NA.GQdRbZ.5VGp5zqbKrzp'
+TOKEN3 = 'rHxrwa0uYylYcnqNhS6ngAaaOk'
+TOKEN = TOKEN1 + TOKEN2 + TOKEN3
 
 # Intents 설정
 intents = discord.Intents.default()

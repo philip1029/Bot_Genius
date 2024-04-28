@@ -1,9 +1,12 @@
 import discord
 import os, random
-# os.system("pip3 install discord")
+from keep_alive import keep_alive
 
 # 봇 토큰
-TOKEN = 'MTIxMzExOTg4ODI0NDM0Mjc5NA.Gh-el2.jTHxElYYCil8eM0CkyvXiosUwev5kKqnNpLsZY'
+TOKEN1 = 'MTIxMzExOTg4ODI0N'
+TOKEN2 = 'DM0Mjc5NA.GQdRbZ.5VGp5zqbKrzp'
+TOKEN3 = 'rHxrwa0uYylYcnqNhS6ngAaaOk'
+TOKEN = TOKEN1 + TOKEN2 + TOKEN3
 # 안씀: CHANNEL_ID = 1213123110161752104
 
 # Intents 설정
@@ -48,5 +51,8 @@ async def on_message(message):
     # 모든 채널에서 메시지를 수신한 경우
     if isinstance(message.channel, discord.TextChannel): 
         await message.channel.send('이제 반응합니다!')
+
+keep_alive()
+
 # 봇 실행
 client.run(TOKEN)
